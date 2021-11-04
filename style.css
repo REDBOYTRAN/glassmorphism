@@ -10,20 +10,23 @@ html {
 
 main {
     min-height: 100vh;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right top, #65DFC9, #6CDBEB);
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .glass {
+    display: flex;
     background-color: white;
-    min-height: 80vh;
+    height: 80vh;
     width: 60%;
     background: linear-gradient(
         to right bottom, 
         rgba(255,255,255,0.7), 
-        rgba(255,255,255,0.3)
+        rgba(255,255,255,0.2)
     );
     border-radius: 2rem;
     z-index: 2;
@@ -50,7 +53,9 @@ main {
 }
 
 .circle2 {
-    bottom: 5%;
+    height: 30rem;
+    width: 30rem;
+    bottom: -15%;
     left: 10%;
     background-color: aquamarine;
 }
